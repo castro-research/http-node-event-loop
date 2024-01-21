@@ -1,10 +1,10 @@
 # The NodeJS Event Loop - Http
 
-A while ago, I was streaming on YouTube about exploring Node.js internals to understand how things work under the hood. You can find the stream here: (Exploring NodeJS Internals)[https://www.youtube.com/watch?v=WjmpCEQb5Ak].
+A while ago, I was streaming on YouTube about exploring Node.js internals to understand how things work under the hood. You can find the stream here: [Exploring NodeJS Internals](https://www.youtube.com/watch?v=WjmpCEQb5Ak).
 
 An interesting aspect I demonstrated was that when reading small, medium, and large files asynchronously, the console output appears only after all buffers are filled. You can check this out in the video.
 
-Later, I watched Matteo Collina's video titled "Do Not Thrash the Node.js Event Loop," available here: (Do Not Thrash the Node.js Event Loop)[https://www.youtube.com/watch?v=VI29mUA8n9w]. This led me to wonder: what happens if 5 HTTP requests reach Node.js simultaneously, without any load balancer?
+Later, I watched Matteo Collina's video titled "Do Not Thrash the Node.js Event Loop," available here: [Do Not Thrash the Node.js Event Loop](https://www.youtube.com/watch?v=VI29mUA8n9w). This led me to wonder: what happens if 5 HTTP requests reach Node.js simultaneously, without any load balancer?
 
 Let's deep dive into it.
 
