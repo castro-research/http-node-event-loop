@@ -51,7 +51,7 @@ run server with inspect and run on bash:
 [3] 38981
 ```
 
-First of all, our server is a (Event Emitter)[https://nodejs.org/en/learn/asynchronous-work/the-nodejs-event-emitter]
+First of all, our server is a [Event Emitter](https://nodejs.org/en/learn/asynchronous-work/the-nodejs-event-emitter)
 
 ```bash
 resource.owner._eventsCount
@@ -104,7 +104,7 @@ while we don't have the promise result, will it trigger the last callback of our
 
 No, we received more request, right? even we solve all `on.('connection')`, we need execute the `on.('request')` ( because we have registered ).
 
-But will we execute all 3 `on.('request')` at the same time now ? it depends if we have works done or not. if the (Node Http undici)[https://github.com/nodejs/undici] call was completed ( the first one, remember ?) we need to delivery response and pop this async task from our stack.
+But will we execute all 3 `on.('request')` at the same time now ? it depends if we have works done or not. if the [Node Http undici](https://github.com/nodejs/undici) call was completed ( the first one, remember ?) we need to delivery response and pop this async task from our stack.
 
 I know it hard to understand, but let's follow the STDOUT:
 
